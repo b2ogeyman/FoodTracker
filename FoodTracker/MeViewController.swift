@@ -1,16 +1,16 @@
 //
-//  HomeViewController.swift
+//  MeViewController.swift
 //  FoodTracker
 //
-//  Created by kostya on 7/3/18.
+//  Created by kostya on 7/9/18.
 //  Copyright © 2018 kostya. All rights reserved.
 //
 
 import UIKit
 import LGButton
 
-class HomeViewController: UIViewController {
-    
+class MeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +22,15 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController!.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController!.navigationBar.isHidden = false
+    }
 
     /*
     // MARK: - Navigation
@@ -34,17 +43,8 @@ class HomeViewController: UIViewController {
     */
     
     
-    @IBAction func therapyButton(_ sender: LGButton) {
-        self.tabBarController!.selectedIndex = 1
+    @IBAction func mealLogButton(_ sender: LGButton) {
+        performSegue(withIdentifier: "toMealLog", sender: self)
     }
     
-    
-    @IBAction func connectFriendsButton(_ sender: LGButton) {
-        performSegue(withIdentifier: "toFriends", sender: self)
-    }
-    
-    
-    @IBAction func explore(_ sender: LGButton) {
-        performSegue(withIdentifier: "toExplore", sender: self)
-    }
 }

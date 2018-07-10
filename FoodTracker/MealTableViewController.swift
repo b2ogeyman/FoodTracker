@@ -19,7 +19,7 @@ class MealTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // Use the edit button item provided by the table view controller.
-        navigationItem.leftBarButtonItem = editButtonItem
+//        navigationItem.leftBarButtonItem = editButtonItem
         
         if let savedMeals = loadMeals() {
             meals += savedMeals

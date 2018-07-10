@@ -10,6 +10,7 @@
 		10A3A22D878B05EF8AF00C35 /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1765A6A6F2EDBBE2AC976583 /* Pods_FoodTracker.framework */; };
 		42D6915CE91D9C7DB93905D4 /* Pods_FoodTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE1D8EF717EB3D706FB6E4A /* Pods_FoodTrackerTests.framework */; };
 		CE0040F620EF806D002676A7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0040F520EF806D002676A7 /* MainTabBarController.swift */; };
+		CE24284120F354A600C8582A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24284020F354A600C8582A /* MeViewController.swift */; };
 		CE92062B20E18DFB00A6DDA5 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062A20E18DFB00A6DDA5 /* Meal.swift */; };
 		CE92062D20E191AA00A6DDA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062C20E191AA00A6DDA5 /* MealTableViewCell.swift */; };
 		CE92062F20E1963E00A6DDA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062E20E1963E00A6DDA5 /* MealTableViewController.swift */; };
@@ -40,6 +41,7 @@
 		CAE1D8EF717EB3D706FB6E4A /* Pods_FoodTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC374327A610F8E5AB64A3EB /* Pods-FoodTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0040F520EF806D002676A7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CE24284020F354A600C8582A /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		CE92062A20E18DFB00A6DDA5 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CE92062C20E191AA00A6DDA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		CE92062E20E1963E00A6DDA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				CEAB0FDD20E0F645001FC192 /* RatingControl.swift */,
 				CE92062C20E191AA00A6DDA5 /* MealTableViewCell.swift */,
 				CE92062E20E1963E00A6DDA5 /* MealTableViewController.swift */,
+				CE24284020F354A600C8582A /* MeViewController.swift */,
 				CEAB0FC120E0D352001FC192 /* Main.storyboard */,
 				CEAB0FC420E0D354001FC192 /* Assets.xcassets */,
 				CEAB0FC620E0D354001FC192 /* LaunchScreen.storyboard */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE24284120F354A600C8582A /* MeViewController.swift in Sources */,
 				CEAB0FC020E0D352001FC192 /* MealViewController.swift in Sources */,
 				CE92062B20E18DFB00A6DDA5 /* Meal.swift in Sources */,
 				CE0040F620EF806D002676A7 /* MainTabBarController.swift in Sources */,

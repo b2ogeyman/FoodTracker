@@ -69,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKE-jE-FM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
         </scene>
         <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
@@ -178,7 +178,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3423" y="133"/>
+            <point key="canvasLocation" x="4360.8000000000002" y="132.68365817091455"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="kNn-5z-bzy">
@@ -191,35 +191,82 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="EKi-JZ-NHF" kind="relationship" relationship="viewControllers" id="cLu-df-S5V"/>
-                        <segue destination="Bug-fI-baG" kind="relationship" relationship="viewControllers" id="Wig-lv-Vo9"/>
+                        <segue destination="LIO-9p-RCv" kind="relationship" relationship="viewControllers" id="gok-dF-ZnE"/>
                         <segue destination="ZQ9-cM-ffT" kind="relationship" relationship="viewControllers" id="ShE-Nb-hfr"/>
+                        <segue destination="Bug-fI-baG" kind="relationship" relationship="viewControllers" id="Wig-lv-Vo9"/>
+                        <segue destination="oGI-Eq-cIt" kind="relationship" relationship="viewControllers" id="iYH-7q-Mtq"/>
+                        <segue destination="ZwL-b6-Vvg" kind="relationship" relationship="viewControllers" id="Jcp-03-RU6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcn-7h-zD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2018" y="133"/>
+            <point key="canvasLocation" x="-2564" y="133"/>
         </scene>
-        <!--Meals-->
-        <scene sceneID="FQ6-it-bZx">
+        <!--Me View Controller-->
+        <scene sceneID="IYg-P6-Vkk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EKi-JZ-NHF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meals" image="mealTabBarIcon" id="DZL-75-lRU">
-                        <color key="badgeColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8HB-CD-wEq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="GW1-SH-kCW" customClass="MeViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQ7-jd-4ke">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dck-wm-tsz">
+                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFB-DU-cBz" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="30" y="0.0" width="315" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="mp8-h6-C2I"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.78153455260000004" green="0.8420034944" blue="0.99710573189999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Meal Log"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mealLogButton:" destination="GW1-SH-kCW" eventType="touchUpInside" id="bXT-7Z-p40"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page will contain users personal information. For example, the meal logging function is already available!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWc-PA-7pM">
+                                        <rect key="frame" x="0.0" y="110" width="375" height="388"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BFB-DU-cBz" firstAttribute="leading" secondItem="dck-wm-tsz" secondAttribute="leading" constant="30" id="6fN-H5-dS1"/>
+                                    <constraint firstItem="kWc-PA-7pM" firstAttribute="leading" secondItem="dck-wm-tsz" secondAttribute="leading" id="M6n-xE-War"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWc-PA-7pM" secondAttribute="trailing" id="YtW-VE-WFq"/>
+                                    <constraint firstAttribute="trailing" secondItem="BFB-DU-cBz" secondAttribute="trailing" constant="30" id="gxC-Nb-svK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xth-kB-lNd" firstAttribute="bottom" secondItem="dck-wm-tsz" secondAttribute="bottom" id="61C-Wk-sV1"/>
+                            <constraint firstAttribute="trailing" secondItem="dck-wm-tsz" secondAttribute="trailing" id="P13-bJ-ash"/>
+                            <constraint firstItem="dck-wm-tsz" firstAttribute="leading" secondItem="YQ7-jd-4ke" secondAttribute="leading" id="UuD-SS-SfX"/>
+                            <constraint firstItem="dck-wm-tsz" firstAttribute="top" secondItem="YQ7-jd-4ke" secondAttribute="top" constant="120" id="u6G-eE-zfB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xth-kB-lNd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wk3-Gv-K8u"/>
                     <connections>
-                        <segue destination="jx2-gT-lor" kind="relationship" relationship="rootViewController" id="VgV-ay-aCJ"/>
+                        <segue destination="jx2-gT-lor" kind="show" identifier="toMealLog" id="YPp-Aw-f0w"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KCV-q2-2sH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzc-D9-8VX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807.20000000000005" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-652" y="-402.54872563718146"/>
         </scene>
         <!--Home-->
         <scene sceneID="u2S-UC-5YQ">
@@ -320,7 +367,7 @@
                     <navigationItem key="navigationItem" id="WWA-UC-FPQ"/>
                     <connections>
                         <segue destination="81d-4W-Ur9" kind="show" identifier="toFriends" id="ay3-C3-t21"/>
-                        <segue destination="Fua-JE-RcA" kind="show" identifier="toExplore" id="joY-fm-hta"/>
+                        <segue destination="Fua-JE-RcA" kind="show" identifier="toExplore" id="oZQ-Fq-RmO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgQ-B9-qsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -380,10 +427,71 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hJF-gN-mXd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OQE-WO-3WT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xC-XH-7hV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="1756"/>
+            <point key="canvasLocation" x="1071" y="1728"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="2fM-oc-OYY">
+            <objects>
+                <viewController id="ZwL-b6-Vvg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lOe-tq-maA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here users will be able to learn more about the team behind the app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-ss-TGl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zcz-ss-TGl" firstAttribute="top" secondItem="aif-P5-LdA" secondAttribute="top" id="5KP-q0-Oog"/>
+                            <constraint firstItem="aif-P5-LdA" firstAttribute="bottom" secondItem="Zcz-ss-TGl" secondAttribute="bottom" id="8TQ-S8-QWm"/>
+                            <constraint firstItem="aif-P5-LdA" firstAttribute="trailing" secondItem="Zcz-ss-TGl" secondAttribute="trailing" id="G5P-hA-s7D"/>
+                            <constraint firstItem="Zcz-ss-TGl" firstAttribute="leading" secondItem="aif-P5-LdA" secondAttribute="leading" id="fVl-SX-tUP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aif-P5-LdA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About us" image="aboutTabBarIcon" id="kNf-7X-Fiv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HH7-9N-jl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4017" y="1399"/>
+        </scene>
+        <!--Community-->
+        <scene sceneID="Yhw-XS-XTd">
+            <objects>
+                <viewController id="oGI-Eq-cIt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwc-UT-eJh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page will allow users to paticipate in the community through messaging with friends or browsing posts and articles!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBY-fR-Vdv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kBY-fR-Vdv" firstAttribute="top" secondItem="dRB-hy-sbc" secondAttribute="top" id="FAc-CE-huJ"/>
+                            <constraint firstItem="dRB-hy-sbc" firstAttribute="bottom" secondItem="kBY-fR-Vdv" secondAttribute="bottom" id="SAw-0T-u1c"/>
+                            <constraint firstItem="dRB-hy-sbc" firstAttribute="trailing" secondItem="kBY-fR-Vdv" secondAttribute="trailing" id="WF7-WE-Nov"/>
+                            <constraint firstItem="kBY-fR-Vdv" firstAttribute="leading" secondItem="dRB-hy-sbc" secondAttribute="leading" id="i7P-Be-oBU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dRB-hy-sbc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Community" image="communityTabBarIcon" id="b53-bR-gmO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyw-To-zyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2319" y="1455"/>
         </scene>
         <!--Therapy-->
         <scene sceneID="qfW-fJ-LsA">
@@ -451,15 +559,36 @@
             </objects>
             <point key="canvasLocation" x="-807.20000000000005" y="965.6671664167917"/>
         </scene>
+        <!--Me-->
+        <scene sceneID="Lrb-K7-tcf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LIO-9p-RCv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="meTabBarIcon" id="Ig4-mE-P7R"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mIp-Yc-x4y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GW1-SH-kCW" kind="relationship" relationship="rootViewController" id="wz0-Wv-5u7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBU-d5-k3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1591.2" y="-402.54872563718146"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="aboutTabBarIcon" width="30" height="30"/>
+        <image name="communityTabBarIcon" width="30" height="30"/>
         <image name="dephaultPhoto" width="540" height="540"/>
         <image name="homeTabBarIcon" width="30" height="30"/>
         <image name="lillacOceanBackgroundImage" width="320" height="568"/>
-        <image name="mealTabBarIcon" width="30" height="30"/>
-        <image name="therapyTabBarIcon" width="29" height="30"/>
+        <image name="meTabBarIcon" width="30" height="30"/>
+        <image name="therapyTabBarIcon" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3EV-N4-SdU"/>
+        <segue reference="JHE-ok-KhI"/>
     </inferredMetricsTieBreakers>
 </document>
