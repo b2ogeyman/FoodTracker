@@ -13,9 +13,9 @@
 		CE24284120F354A600C8582A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24284020F354A600C8582A /* MeViewController.swift */; };
 		CE24284720FF1B9600C8582A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24284620FF1B9600C8582A /* LoginViewController.swift */; };
 		CE24284920FF299100C8582A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24284820FF299100C8582A /* SignUpViewController.swift */; };
-		CE24284B20FF2E9400C8582A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE24284A20FF2E9400C8582A /* GoogleService-Info.plist */; };
 		CE59E0CA210ADFE70014226D /* FindFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59E0C9210ADFE70014226D /* FindFriendsTableViewCell.swift */; };
 		CE59E0CC210AE1730014226D /* FindFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59E0CB210AE1730014226D /* FindFriendsTableViewController.swift */; };
+		CE59E0D0210AFDB00014226D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE59E0CF210AFDB00014226D /* GoogleService-Info.plist */; };
 		CE92062B20E18DFB00A6DDA5 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062A20E18DFB00A6DDA5 /* Meal.swift */; };
 		CE92062D20E191AA00A6DDA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062C20E191AA00A6DDA5 /* MealTableViewCell.swift */; };
 		CE92062F20E1963E00A6DDA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92062E20E1963E00A6DDA5 /* MealTableViewController.swift */; };
@@ -49,9 +49,9 @@
 		CE24284020F354A600C8582A /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		CE24284620FF1B9600C8582A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE24284820FF299100C8582A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CE24284A20FF2E9400C8582A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE59E0C9210ADFE70014226D /* FindFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsTableViewCell.swift; sourceTree = "<group>"; };
 		CE59E0CB210AE1730014226D /* FindFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsTableViewController.swift; sourceTree = "<group>"; };
+		CE59E0CF210AFDB00014226D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE92062A20E18DFB00A6DDA5 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CE92062C20E191AA00A6DDA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		CE92062E20E1963E00A6DDA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 				CEAB0FC420E0D354001FC192 /* Assets.xcassets */,
 				CEAB0FC620E0D354001FC192 /* LaunchScreen.storyboard */,
 				CEAB0FC920E0D354001FC192 /* Info.plist */,
-				CE24284A20FF2E9400C8582A /* GoogleService-Info.plist */,
+				CE59E0CF210AFDB00014226D /* GoogleService-Info.plist */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB0FC820E0D354001FC192 /* LaunchScreen.storyboard in Resources */,
-				CE24284B20FF2E9400C8582A /* GoogleService-Info.plist in Resources */,
+				CE59E0D0210AFDB00014226D /* GoogleService-Info.plist in Resources */,
 				CEAB0FC520E0D354001FC192 /* Assets.xcassets in Resources */,
 				CEAB0FC320E0D352001FC192 /* Main.storyboard in Resources */,
 			);
