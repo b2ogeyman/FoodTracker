@@ -16,6 +16,10 @@ target 'FoodTracker' do
 
   pod 'LGButton'
   # Pods for FoodTracker
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'JSQMessagesViewController'
 
   target 'FoodTrackerTests' do
     inherit! :search_paths

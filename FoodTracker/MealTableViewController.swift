@@ -27,6 +27,7 @@ class MealTableViewController: UITableViewController {
         else {
             loadSampleMeals()
         }
+        print("Hi!")
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +41,9 @@ class MealTableViewController: UITableViewController {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        print(meals.count)
         return meals.count
     }
 

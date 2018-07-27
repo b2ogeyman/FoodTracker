@@ -47,4 +47,14 @@ class MeViewController: UIViewController {
         performSegue(withIdentifier: "toMealLog", sender: self)
     }
     
+    @IBAction func loginButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toLogin", sender: self)
+    }
+    
+    @IBAction func findFriendsButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toFindFriends", sender: self)
+    }
+    
+    
+    
 }
